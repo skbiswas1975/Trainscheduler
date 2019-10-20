@@ -78,7 +78,7 @@ database.ref().on("child_added", function (childSnapshot, prevChildKey) {
 	
 	var waitingMinutesTillNextTrain = trainFrequency - timeRemainder;
 	
-	var nextTrainTime = moment().add(waitingMinutesTillNextTrain, "minutes").format("hh:mm");
+	var nextTrainTime = moment().add(waitingMinutesTillNextTrain, "minutes").format("hh:mm A");
 		
 	$(".table > tbody").append("<tr><td class='table-head'>" + trainName + "</td><td class='table-head'>" + trnDestination + "</td><td class='table-head'>" + trainFrequency + "</td><td class='table-head'>" + nextTrainTime + "</td><td class='table-head'>" + waitingMinutesTillNextTrain + "</td></tr>");
 })
