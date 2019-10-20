@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Train Scheduler</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body class="bg">
+
+<div class="container">
+<div class="jumbotron jumbo">
+  
+    <h2>Any Time is Train Time</h2>
+  
+</div>
+  
+<div class="container-fluid bg-3 text-center questionArea">    
+  
+  
+  
+  
+  
+  
+  
+  <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+						<h4 class="panel-title">
+                            Current Train Schedule
+                        </h4>
+						<span class="current-time" style="float: right;margin-top: -15px;"></span>
+					
+					
+						
+                        
+                    </div>
+                    <div class="panel-body table-responsive">
+                        <table class="table">
+                            <thead>
+                                <th class="table-head">Train Name</th>
+                                <th class="table-head">Destination</th>
+                                <th class="table-head">Frequency (min)</th>
+                                <th class="table-head">Next Arrival</th>
+                                <th class="table-head">Minutes Away</th>
+                            </thead>
+
+                            <tbody class="text-center">
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+		
+		
+		
+		
+<div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            Add Train
+                        </h4>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+
+                            <div class="form-group">
+                                <label class="formlbl" for="trainName">Train Name</label>
+                                <input type="text" class="form-control" id="trainName">
+                            </div>
+                            <div class="form-group">
+                                <label class="formlbl" for="destination">Destination</label>
+                                <input type="text" class="form-control" id="destination">
+                            </div>
+                            <div class="form-group">
+                                <label class="formlbl" for="firstTrainTime">First Train Time (HH:mm - Military Time)</label>
+                                <input type="text" class="form-control" id="firstTrainTime">
+                            </div>
+                            <div class="form-group">
+                                <label class="formlbl" for="frequency">Frequency (min)</label>
+                                <input type="text" class="form-control" id="frequency">
+                            </div>
+                            <button type="submit" class="btn submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+</div><br>
+
+<footer class="container-fluid text-center">
+  <p>Copyright</p>
+</footer>
+</div>
+	<!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- Firebase Reference -->
+	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+	
+    <!-- My JS -->
+    <script src="assets/javascript/TrainScheduler.js"></script>
+	
+    <!-- Moment js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</body>
+</html>
